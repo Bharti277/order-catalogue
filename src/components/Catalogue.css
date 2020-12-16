@@ -1,0 +1,10 @@
+.cars {
+  width: 230px;
+  background: red;
+  height: 200px;
+  display: grid;
+}
+.catalogue {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
