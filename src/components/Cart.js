@@ -11,24 +11,13 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
   },
-  title: {
-    marginTop: "80px",
-  }
 }));
 
 function Catalogue(props) {
   const classes = useStyles();
-  const [page, setPage] = useState('products');
-
-  const addToCart = (item) => {
-    console.log("I am catalogue");
-    props.addToCart(item);
-  };
-
 
   return (
     <React.Fragment>
-    <h1 className={classes.title}>Best Collection of Cars</h1>
     <div className="catalogue root">
       {props.accessData.map((data) => (
         <Box
@@ -57,8 +46,8 @@ function Catalogue(props) {
           <Box p={1} bgcolor="grey.500" fontSize="20px">
             <span>Address : {data.address}</span>
           </Box>
-          <Button variant="contained" color="secondary" onClick={addToCart}>
-            Add To Cart{data.length}
+          <Button variant="contained" color="secondary">
+            Remove From Cart{data.length}
           </Button>
         </Box>
       ))}

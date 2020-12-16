@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { fade, makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -17,6 +17,8 @@ import MoreIcon from "@material-ui/icons/MoreVert";
 import Button from "@material-ui/core/Button";
 import { Icon } from "@material-ui/core";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
+import Cart from "./Cart";
+import { Route } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -86,12 +88,21 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
+  appbar: {
+    position: 'fixed',
+  },
+  cart: {
+    // display: 'none',
+    width: '100%',
+    height: '100%'
+  }
 }));
 
 export default function Header(props) {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -142,9 +153,17 @@ export default function Header(props) {
     ></Menu>
   );
 
+  const cartHandler = item => {
+    
+    console.log('heloooooo', item)
+  }
+
+
+
+
   return (
     <div className={classes.grow}>
-      <AppBar className="appbar" position="static">
+      <AppBar className={classes.appbar}>
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
             MakeYourOrder
@@ -167,10 +186,13 @@ export default function Header(props) {
           </div>
           <div className={classes.root}>
             {/* <Button variant="contained" ></Button> */}
+            {/* <Cart classes={classes.cart} /> */}
             <MenuItem>
-              <IconButton aria-label="show items" color="inherit">
+              <IconButton aria-label="show items" 
+              onClick={cartHandler}
+              color="inherit">
                 <Badge badgeContent={props.cart.length} color="secondary">
-                  <AddShoppingCartIcon />
+                  <AddShoppingCartIcon  />
                 </Badge>
               </IconButton>
             </MenuItem>
