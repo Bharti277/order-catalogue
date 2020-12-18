@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/order-catalogue/static/css/main.fb4e0ca8.chunk.css",
-    "main.js": "/order-catalogue/static/js/main.0c73f826.chunk.js",
-    "main.js.map": "/order-catalogue/static/js/main.0c73f826.chunk.js.map",
-    "runtime-main.js": "/order-catalogue/static/js/runtime-main.75d9194e.js",
-    "runtime-main.js.map": "/order-catalogue/static/js/runtime-main.75d9194e.js.map",
-    "static/js/2.46000d25.chunk.js": "/order-catalogue/static/js/2.46000d25.chunk.js",
-    "static/js/2.46000d25.chunk.js.map": "/order-catalogue/static/js/2.46000d25.chunk.js.map",
+    "main.js": "/order-catalogue/static/js/main.b0641f95.chunk.js",
+    "main.js.map": "/order-catalogue/static/js/main.b0641f95.chunk.js.map",
+    "runtime-main.js": "/order-catalogue/static/js/runtime-main.04931027.js",
+    "runtime-main.js.map": "/order-catalogue/static/js/runtime-main.04931027.js.map",
+    "static/js/2.c868bed8.chunk.js": "/order-catalogue/static/js/2.c868bed8.chunk.js",
+    "static/js/2.c868bed8.chunk.js.map": "/order-catalogue/static/js/2.c868bed8.chunk.js.map",
     "index.html": "/order-catalogue/index.html",
     "static/css/main.fb4e0ca8.chunk.css.map": "/order-catalogue/static/css/main.fb4e0ca8.chunk.css.map",
-    "static/js/2.46000d25.chunk.js.LICENSE.txt": "/order-catalogue/static/js/2.46000d25.chunk.js.LICENSE.txt"
+    "static/js/2.c868bed8.chunk.js.LICENSE.txt": "/order-catalogue/static/js/2.c868bed8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.75d9194e.js",
-    "static/js/2.46000d25.chunk.js",
+    "static/js/runtime-main.04931027.js",
+    "static/js/2.c868bed8.chunk.js",
     "static/css/main.fb4e0ca8.chunk.css",
-    "static/js/main.0c73f826.chunk.js"
+    "static/js/main.b0641f95.chunk.js"
   ]
 }
